@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./next-app:/app
+    command: sh -c "npm run dev"
+    ports:
+      - "3000:3000"
+    stdin_open: true
