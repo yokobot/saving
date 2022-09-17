@@ -39,6 +39,9 @@ type Props = {
 };
 
 let cnt = 0;
+let cntTmp = 0;
+let num = 0;
+
 
 const SurveyContent = (Props: Props) => {
   const [isOpen, setOpen] = useState(false);
@@ -109,7 +112,10 @@ const SurveyContent = (Props: Props) => {
       </MainContentBlock>
     );
   }
-
+  if (cntTmp === 0){
+    num = Math.floor(Math.random() * 1000) + 7500;
+    cntTmp++;
+  }
   return (
     <>
       <ResultTitleBlock>
@@ -117,7 +123,7 @@ const SurveyContent = (Props: Props) => {
       </ResultTitleBlock>
       <ResultScoreBlock>
         <Reward id="rewardId" />
-        <CountUp end={7500} duration={2.5} />
+        <CountUp end={num} duration={2.5} />
         <ResultScoreUnitBlock>HTT-P</ResultScoreUnitBlock>
       </ResultScoreBlock>
       <ResultContentBlock>
