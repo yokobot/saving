@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import React, { useState, createContext, useContext } from "react";
+import React, { useState, createContext } from "react";
 import { Header, MailContainer, HeaderTitle } from "../styles/globals";
 import {
   SubContainer,

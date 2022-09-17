@@ -52,13 +52,13 @@ export const Section1 = () => {
         <SubSelectBlock>
           <SubSelectTextBlock>生年月日</SubSelectTextBlock>
           <SubSelectInputBlock>
-            <SubSelectInputText type="text"  placeholder="1990/1/1"/>
+            <SubSelectInputText type="text" placeholder="1990/1/1" />
           </SubSelectInputBlock>
         </SubSelectBlock>
         <SubSelectBlock>
           <SubSelectTextBlock>お住まいのエリア</SubSelectTextBlock>
           <SubSelectInputBlock>
-            <SubSelectInputText type="text" placeholder="江東区"/>
+            <SubSelectInputText type="text" placeholder="江東区" />
           </SubSelectInputBlock>
         </SubSelectBlock>
       </MainSelectBlock>
@@ -82,7 +82,8 @@ export const Section2 = () => {
         <SubSelectBlock>
           <SubSelectTextBlock>お住まいの家族構成</SubSelectTextBlock>
           <SubSelectInputBlock>
-            <SubSelectInputText type="text" /><span>人</span>
+            <SubSelectInputText type="text" />
+            <span>人</span>
           </SubSelectInputBlock>
         </SubSelectBlock>
         <SubSelectBlock>
@@ -111,6 +112,7 @@ export const Section3 = () => {
           <SubSelectTextBlock>電気代</SubSelectTextBlock>
           <SubSelectInputBlock>
             <SubSelectInputText type="text" />
+            <span>円</span>
           </SubSelectInputBlock>
         </SubSelectBlock>
       </MainSelectBlock>
@@ -135,26 +137,26 @@ export const Section4 = () => {
           <SubSelectTextBlock>暖房の設定温度</SubSelectTextBlock>
           <SubSelectInputBlock>
             <SubSelectInputRadio>
-                <input type="radio" name="Section4-1" />
-                <span>20度以下</span>
-              </SubSelectInputRadio>
-              <SubSelectInputRadio>
-                <input type="radio" name="Section4-1" />
-                <span>21度以上</span>
-              </SubSelectInputRadio>
+              <input type="radio" name="Section4-1" />
+              <span>20度以下</span>
+            </SubSelectInputRadio>
+            <SubSelectInputRadio>
+              <input type="radio" name="Section4-1" />
+              <span>21度以上</span>
+            </SubSelectInputRadio>
           </SubSelectInputBlock>
         </SubSelectBlock>
         <SubSelectBlock>
           <SubSelectTextBlock>冷房の設定温度</SubSelectTextBlock>
           <SubSelectInputBlock>
             <SubSelectInputRadio>
-                <input type="radio" name="Section4-2" />
-                <span>27度以下</span>
-              </SubSelectInputRadio>
-              <SubSelectInputRadio>
-                <input type="radio" name="Section4-2" />
-                <span>28度以上</span>
-              </SubSelectInputRadio>
+              <input type="radio" name="Section4-2" />
+              <span>27度以下</span>
+            </SubSelectInputRadio>
+            <SubSelectInputRadio>
+              <input type="radio" name="Section4-2" />
+              <span>28度以上</span>
+            </SubSelectInputRadio>
           </SubSelectInputBlock>
         </SubSelectBlock>
       </MainSelectBlock>
